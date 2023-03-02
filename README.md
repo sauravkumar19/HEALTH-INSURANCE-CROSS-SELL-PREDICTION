@@ -44,19 +44,25 @@ Conclusion
 
 ● Vehicle_damage, Vehicle_age and channel response feature were found to
 be most relevant for Classify the insurance response for company.
+
 ● From vehicle_damage and vehicle age, one can notice people have to pay
 higher premium for insurance if there car get damage previously or there car
 is older than 2 years. Also response rate of insurance is also high for such
 scenario.
+
 ● For random forest channel response, Annual premium and Vehicle_damage
 are important feature for classification.
+
 ● For XGB Vehicle_damage, Age section and gender are important feature for
 classification.
+
 ● Logistic regression model does not perform good in this dataset as very few
 dependent variable is strongly correlated to independent variable. The XGB
 and GBM provide substantial improvement in predicting the insurance
 response.The accuracy and roc_auc score is greater than 0.9 for both model.
+
 ● Random forest model precision score is 0.91 while recall score is 0.77. This
-means random forest gives good result for positive insurance response.
+means random forest gives good result for positive insurance response
+
 ● So we used XGboost model for classification. This model can also improve by
 finer tuning of hyperparameters.
